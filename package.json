@@ -1,0 +1,28 @@
+{
+  "name": "sd-0x-project-jest",
+  "version": "1.0.0",
+  "description": "Jest project",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betrybe/sd-0x-project-jest.git"
+  },
+  "keywords": [
+    "javascript",
+    "tests",
+    "jest"
+  ],
+  "author": "Mauricio Hamaji",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/betrybe/sd-0x-project-jest/issues"
+  },
+  "homepage": "https://github.com/betrybe/sd-0x-project-jest#readme",
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "acorn": ">=5.7.4",
+    "minimist": ">=1.2.2"
+  }
+}
