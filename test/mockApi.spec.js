@@ -39,6 +39,7 @@ const user = {
 }
 
 describe('verifica o usuário', () => {
+  //             jest.fn().mockResolvedValue(user)        
   api.fetchURL = jest.fn().mockImplementation(() => new Promise(resolve => {
     resolve({ ...user })
   }));
