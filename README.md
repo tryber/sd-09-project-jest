@@ -6,7 +6,7 @@ Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e
 
 Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
 
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
+Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos..
 
 ---
 
@@ -58,7 +58,7 @@ Neste projeto, você irá implementar testes utilizando o **Jest** para verifica
 
 Este repositório contém a estrutura de pastas e arquivos que contém funções que deverão ser testadas por você. Após clonar o projeto e criar sua branch de trabalho, você poderá começar o desenvolvimentos dos testes.
 
-Lembre-se de **não modificar** os arquivos da pasta `src`, o objetivo do projeto é que você trabalhe apenas com a pasta `test`. 
+Lembre-se de **não modificar** os arquivos da pasta `src`, o objetivo do projeto é que você trabalhe apenas com a pasta `test`.
 
 Para testar se os requisitos estão passando, você pode executar os testes na sua máquina com o comando `npm test nome-arquivo.test`. É muito importante que você **não modifique nenhum arquivo da pasta src**. Alterá-los pode fazer com que o seu requisito não passe no avaliador automático.
 
@@ -93,7 +93,7 @@ Lembre-se também de **não modificar** os describes dos tests na pasta `test`. 
     * Exemplo: `git checkout -b joaozinho-project-jest`
   * Agora, crie uma branch onde você vai guardar os commits do seu projeto
 
---- 
+---
 
 ## Durante o desenvolvimento
 
