@@ -11,12 +11,13 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
 describe("o retorno do telefonema", () => {
-  test("atende", () => {
-    assert.fail();
+  test("atende", async () => {
     // Insira seu teste assíncrono aqui
+    const awaitPromise = await answerPhone(true).then((response) => response);
+    expect(awaitPromise).toBe('Oi!');
   });
   test("ocupado", () => {
-    assert.fail();
     // Insira seu teste assíncrono aqui
+    answerPhone(false).catch((response) => expect(response).toBe('Infelizmente não podemos atender...'));
   });
 });
