@@ -25,7 +25,7 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 describe('verifica o usuário', () => {
   // Crie sua mock da função fetchURL() aqui
   const info = {
-    gerder: 'male',
+    gender: 'male',
     name: {first: 'Antônio', last: 'Britto'},
     location:{country: 'Brazil'},
     email: 'tunico@bol.com.br',
@@ -35,7 +35,7 @@ describe('verifica o usuário', () => {
   api.fetchURL = jest.fn().mockResolvedValue(info);
 
   test('verifica se o usuário é o tunico', async () => {
-    api.fetchURL().then((user) => {
+    return api.fetchURL().then((user) => {
       expect(user.gender).toEqual('male');
       expect(user.name.first).toEqual('Antônio');
       expect(user.name.last).toEqual('Britto');
