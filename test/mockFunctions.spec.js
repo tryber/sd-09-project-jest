@@ -20,7 +20,9 @@ describe('verifica as funções e os mocks', () => {
   mockFunctions.power.mockImplementation((a,b) => a ** b);
   mockFunctions.add.mockImplementation((a,b) => a + b);
   mockFunctions.subtract.mockImplementation((a,b) => a - b);
+  mockFunctions.divide.mockImplementation((a, b) => a / b);
   mockFunctions.factorial.mockImplementation((number) => {
+    if (number === 0 || number === 1) return 1;
     let fact = number
     for (let index = 1; index < number; index += 1){
      fact *= index
