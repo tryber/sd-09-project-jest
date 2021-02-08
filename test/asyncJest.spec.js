@@ -18,8 +18,8 @@ describe("o retorno do telefonema", () => {
   });
   test("ocupado", () => {
     expect.assertions(1)
-    return answerPhone(false).catch(e => {
+    return answerPhone().catch(e => {
       expect(e).toBe('Infelizmente não podemos atender...')
-    })
+    });
   });
 });
