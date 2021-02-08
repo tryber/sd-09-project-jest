@@ -20,7 +20,15 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
 describe('quem sobreviveu?', () => {
-  // Adicione seu código aqui
+  beforeEach(() => {
+    adventure.randomAttack();
+    const survivors = adventure.specialists.reduce((acc,  {nome }, index, arr) =>
+      index === arr.length - 1 ? `${acc}${nome}.` : `${acc}${nome}, `
+    , 'Survivors: ');
+    console.log(survivors);
+  });
+
+  afterAll(() => console.log(`Great survivor: ${adventure.specialists[0].nome}!`));
 
   test('depois da primeira aventura', () => {
     expect(adventure.specialists.length).toBe(5);
