@@ -11,12 +11,21 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
 describe("o retorno do telefonema", () => {
-  test("atende", () => {
-    assert.fail();
-    // Insira seu teste assíncrono aqui
+  const newAnswer = {};
+  newAnswer.answerPhone = answerPhone;
+  newAnswer.answerPhone = jest.spyOn(newAnswer, 'answerPhone');
+  
+  test("atende", async () => {
+    const ans = await newAnswer.answerPhone(true)
+    expect(ans).toBe('Oi!');
+    expect(newAnswer.answerPhone).toHaveBeenCalled();
+    expect(newAnswer.answerPhone).toHaveBeenCalledTimes(1);
   });
-  test("ocupado", () => {
-    assert.fail();
-    // Insira seu teste assíncrono aqui
+  test("ocupado", async () => {
+    try {
+      await newAnswer.answerPhone(false);
+    } catch (error) {
+      expect(error).toBe('Infelizmente não podemos atender...');
+    }
   });
 });
