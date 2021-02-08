@@ -1,6 +1,6 @@
 ## Termos de acordos
 
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe!
+Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
 
 # Boas vindas ao repositório do projeto de Jest Assíncrono e Mocking!
 
@@ -27,11 +27,11 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [Code Climate](#code-climate)
 - [Requisitos do projeto](#requisitos-do-projeto)
   - [Lista de requisitos](#lista-de-requisitos)
-    - [1 - Crie testes para uma função assíncrona](#1-crie-testes-para-uma-função-assíncrona)
-    - [2 - Crie um "Mock" no arquivo test/mockFunctions.spec.js](#2-Crie-um-"Mock"-no-arquivo-test/mockFunctions.spec.js)
-    - [3 - Crie um Mock para o retorno da API](#3-Crie-um-Mock-para-o-retorno-da-API)
-    - [4 - Crie funções no arquivo test/setupTeardown.spec.js](#4-Crie-funções-no-arquivo-test/setupTeardown.spec.js)
-- [Avisos finais](#avisos-finais)
+    - [1. Crie testes para uma função assíncrona](#1-crie-testes-para-uma-função-assíncrona)
+    - [2. Crie um "Mock" no arquivo test/mockFunctions.spec.js](#2-crie-um-mock-no-arquivo-testmockfunctionsspecjs)
+    - [3. Crie um Mock para o retorno da API](#3-crie-um-mock-para-o-retorno-da-api)
+    - [4. Crie funções no arquivo test/setupTeardown.spec.js](#4-crie-funções-no-arquivo-testsetupteardownspecjs)
+- [Avisos Finais](#avisos-finais)
 
 ---
 
