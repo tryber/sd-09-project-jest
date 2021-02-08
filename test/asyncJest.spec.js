@@ -22,6 +22,5 @@ describe("o retorno do telefonema", () => {
     } catch (error) {
       expect(error).toEqual(retrunFalse);
     }
-
   });
 });
