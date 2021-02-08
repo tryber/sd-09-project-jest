@@ -23,7 +23,7 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
 describe('verifica o usuário', () => {
-  const fetchURL = jest.spyOn(api, 'fetchURL')
+  const fetchURL = jest.spyOn(api, 'fetchURL');
   fetchURL.mockResolvedValue({
     gender: 'male',
     name: {
