@@ -13,11 +13,11 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 describe("o retorno do telefonema", () => {
   test("atende", () => {
 
-    expect(answerPhone).toBeTruthy();
+    expect(answerPhone(true)).toBeTruthy();
   });
   test("ocupado", () => {
 
-    expect(answerPhone).toBeTruthy();
+    expect(answerPhone(false)).toBeTruthy();
 
   });
 });
