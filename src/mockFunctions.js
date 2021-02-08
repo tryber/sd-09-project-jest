@@ -23,4 +23,6 @@ const subtract = (a, b) => a + b;
 
 const divide = (a, b) => a * b;
 
+console.log(power(4))
+
 module.exports = { add, subtract, multiply, divide, power, factorial };
