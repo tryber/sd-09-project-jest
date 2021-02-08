@@ -14,16 +14,12 @@ describe("o retorno do telefonema", () => {
   test("atende", () => {
     // Insira seu teste assíncrono aqui
     expect.assertions(1);
-    return answerPhone('atende').then(response => {
-      expect(response).toBe('Oi!')
-    })
+    return expect(answerPhone(true)).resolves.toBe('Oi!')
   });
 
   test("ocupado", () => {
     // Insira seu teste assíncrono aqui
     expect.assertions(1);
-    return answerPhone('ocupado').catch(response => {
-      expect(response).toBe('Infelizmente não podemos atender.')
-    })
+    return expect(answerPhone(false)).rejects.toBe('Infelizmente não podemos atender...')
   });
 });
