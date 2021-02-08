@@ -10,13 +10,19 @@ a função recebe como parâmetro true e false, respectivamente.
 ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
+// Tiago Yoneda
+
 describe("o retorno do telefonema", () => {
   test("atende", () => {
-    assert.fail();
-    // Insira seu teste assíncrono aqui
+    return answerPhone(true)
+      .then(greeting => {
+        expect(greeting).toBe('Oi!');
+      })
   });
   test("ocupado", () => {
-    assert.fail();
-    // Insira seu teste assíncrono aqui
+    return answerPhone(false)
+      .catch(message => {
+        expect(message).toBe('Infelizmente não podemos atender...');
+      })
   });
 });
