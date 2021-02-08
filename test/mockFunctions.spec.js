@@ -15,13 +15,13 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
 describe('verifica as funções e os mocks', () => {
-  const factorial = a => (a <= 1 ? 1 : a * factorial(a - 1));
+  const factorialMock = a => (a <= 1 ? 1 : a * factorialMock(a - 1));
   mockFunctions.add.mockImplementation((a, b) => a + b);
   mockFunctions.subtract.mockImplementation((a, b) => a - b);
   mockFunctions.multiply.mockImplementation((a, b) => a * b);
   mockFunctions.divide.mockImplementation((a, b) => a / b);
   mockFunctions.power.mockImplementation((a, b) => Math.pow(a, b));
-  mockFunctions.factorial.mockImplementation(factorial);
+  mockFunctions.factorial.mockImplementation(factorialMock);
   
   test('testa função add', () => {
     expect(mockFunctions.add(1, 2)).toEqual(3);
