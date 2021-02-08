@@ -12,6 +12,7 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 
 describe("o retorno do telefonema", () => {
   test("atende", () => {
+    // Apagar assert
     assert.fail();
     // Insira seu teste assíncrono aqui
   });
