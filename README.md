@@ -79,9 +79,9 @@ Lembre-se também de **não modificar** os describes dos tests na pasta `test`. 
 ## Antes de começar a desenvolver
 
 1. Clone o repositório
-  * `git clone https://github.com/tryber/sd-0x-project-jest.git`.
+  * `git clone https://github.com/tryber/sd-09-project-jest.git`.
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-0x-project-jest`
+    * `cd sd-09-project-jest`
 
 2. Crie uma branch a partir da branch `master`
   * Verifique que você está na branch `master`
@@ -117,7 +117,7 @@ Para **"entregar"** seu projeto, siga os passos a seguir:
 * Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
   * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
   * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-0x`
+  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-09`
 
 ---
 
