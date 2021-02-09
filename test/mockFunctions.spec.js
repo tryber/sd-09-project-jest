@@ -26,7 +26,7 @@ describe('verifica as funções e os mocks', () => {
     let fatorial = a;
     let result = fatorial;
     for (var index = 1; index < fatorial; index += 1) {
-        result *= index;
+      result *= index;
     }
     return result;
   });
