@@ -21,11 +21,11 @@ mockFunctions.divide = jest.fn((a, b) => a / b);
 mockFunctions.multiply = jest.fn((a, b) => a * b);
 mockFunctions.power = jest.fn((a, b) => a ** b);
 mockFunctions.factorial = jest.fn((n) => {
-  let fact = n;
+  let facts = n;
   for(let i = 1; i < n; i += 1) {
-     fact *= i
+     facts *= i
   }
-  return fact;
+  return facts;
 });
   // Quesito realizado junto com Diógenes Santos
   test('testa função add', () => {
