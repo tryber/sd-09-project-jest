@@ -14,15 +14,14 @@ describe("o retorno do telefonema", () => {
   test("atende", () => {
     // assert.fail();
     // Insira seu teste assíncrono aqui
-    return answerPhone('Alô?').then(awnser => {
-      expect(awnser).toBe('Oi!');
-    });
+    return expect(answerPhone(true)).resolves.toBe("Oi!");
   });
+
   test("ocupado", () => {
     // assert.fail();
     // Insira seu teste assíncrono aqui
-    return answerPhone().catch(error => {
-      expect(error).toEqual('Infelizmente não podemos atender...');
-    });
+    return expect(answerPhone(false)).rejects.toBe(
+      "Infelizmente não podemos atender..."
+    );
   });
 });
