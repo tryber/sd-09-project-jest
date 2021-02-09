@@ -59,7 +59,7 @@ const user = {
   },
   nat: 'IE'
 }
-describe('verifica o usuário', async () => {
+describe('verifica o usuário', () => {
   const apiURL = jest.spyOn(api, 'fetchURL');
 
   test('verifica se o usuário é o tunico', async () => {
