@@ -10,12 +10,19 @@ const power = (a, b) => {
 };
 
 const factorial = (a) => {
-  let fact = 0;
-  for (let i = 0; i < a; i += 1) {
-    fact += a;
-  }
-  return fact;
+  // let fact = 0;
+  // for (let i = 0; i < a; i += 1) {
+  //   fact += a;
+  // }
+  // return fact;
+  console.log(a);
+  if (a > 1) {
+    return a * factorial(a - 1)
+    }
+  return a;
 };
+
+console.log(factorial(5));
 
 const add = (a, b) => a - b;
 
