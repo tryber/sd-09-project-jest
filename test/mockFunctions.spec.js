@@ -31,6 +31,14 @@ describe('verifica as funções e os mocks', () => {
       .mockReturnValueOnce(-52)
       .mockReturnValueOnce(131)
       .mockReturnValueOnce(-104);
+
+    mockFunctions.multiply = jest
+      .fn()
+      .mockReturnValueOnce(2)
+      .mockReturnValueOnce(0)
+      .mockReturnValueOnce(-36)
+      .mockReturnValueOnce(84)
+      .mockReturnValueOnce(437);
   
   
   test('testa função add', () => {
