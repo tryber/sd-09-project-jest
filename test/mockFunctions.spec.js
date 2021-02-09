@@ -40,6 +40,13 @@ describe('verifica as funções e os mocks', () => {
       .mockReturnValueOnce(84)
       .mockReturnValueOnce(437);
   
+    mockFunctions.divide = jest
+      .fn()
+      .mockReturnValueOnce(13)
+      .mockReturnValueOnce(-380)
+      .mockReturnValueOnce(6)
+      .mockReturnValueOnce(3)
+      .mockReturnValueOnce(121);
   
   test('testa função add', () => {
     expect(mockFunctions.add(1, 2)).toEqual(3);
