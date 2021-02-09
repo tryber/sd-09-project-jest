@@ -21,7 +21,7 @@ describe('verifica as funções e os mocks', () => {
   mockFunctions.multiply.mockImplementation((a, b) => (a * b));
   mockFunctions.divide.mockImplementation((a, b) => (a / b));
   mockFunctions.power.mockImplementation((a, b) => (a ** b));
-  mockFunctions.factorial.mockImplementation((a, b) => {
+  mockFunctions.factorial.mockImplementation((a) => {
     let fact = 1;
     if (a === 0) {
       return fact;
