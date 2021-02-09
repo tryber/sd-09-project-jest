@@ -47,6 +47,14 @@ describe('verifica as funções e os mocks', () => {
       .mockReturnValueOnce(6)
       .mockReturnValueOnce(3)
       .mockReturnValueOnce(121);
+
+    mockFunctions.power = jest
+      .fn()
+      .mockReturnValueOnce(100)
+      .mockReturnValueOnce(1024)
+      .mockReturnValueOnce(3125)
+      .mockReturnValueOnce(1)
+      .mockReturnValueOnce(1);
   
   test('testa função add', () => {
     expect(mockFunctions.add(1, 2)).toEqual(3);
