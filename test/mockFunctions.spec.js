@@ -25,7 +25,7 @@ describe('verifica as funções e os mocks', () => {
   mockFunctions.factorial.mockImplementation((a) => {
     let fatorial = a;
     let result = fatorial;
-    for (var index = 1; index < fatorial; index += 1) {
+    for (let index = 1; index < fatorial; index += 1) {
       result *= index;
     }
     return result;
