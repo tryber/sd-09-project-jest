@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Jest project",
   "scripts": {
-    "test": "jest --watch --verbose"
+    "test": "jest --watchAll --verbose"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,4 @@
 const mockFunctions = require('../src/mockFunctions');
-jest.mock('../src/mockFunctions')
 /*
 Criamos uma série de funções com eficiência duvidosa.
 Elas estão no arquivo 'src/mockFunctions.js'.
@@ -14,6 +13,8 @@ O foco aqui é a utilização de mock functions.
 ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
+jest.mock('../src/mockFunctions')
+
 describe('verifica as funções e os mocks', () => {
   mockFunctions.add.mockImplementation((a, b) => a + b);
   mockFunctions.subtract.mockImplementation((a, b) => a - b);
@@ -21,6 +22,8 @@ describe('verifica as funções e os mocks', () => {
   mockFunctions.divide.mockImplementation((a, b) => a / b);
   mockFunctions.power.mockImplementation((a, b) => a ** b);
   mockFunctions.factorial.mockImplementation(n => {
+    // the implemented code is borrowed from:
+    // https://www.educative.io/edpresso/how-to-find-the-factorial-of-a-number-in-javascript
     let answer = 1;
     if (n == 0 || n == 1){
       return answer;
@@ -29,7 +32,7 @@ describe('verifica as funções e os mocks', () => {
         answer = answer * i;
       }
       return answer;
-    }  
+    }
   });
 
   test('testa função add', () => {
