@@ -12,7 +12,7 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 
 describe("o retorno do telefonema", () => {
   test("atende", () => {
-
+    // resolves / rejects: https://jestjs.io/docs/pt-BR/asynchronous
     expect(answerPhone(true)).resolves.toBe('Oi!');
   });
   test("ocupado", () => {
