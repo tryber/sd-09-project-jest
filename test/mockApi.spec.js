@@ -37,11 +37,7 @@ describe('verifica o usuário', () => {
     },
   };
 
-  global.fetch = jest.fn(() =>
-    Promise.resolve({
-      json: () => Promise.resolve(expected),
-    }) 
-  );
+  api.fetchURL = jest.fn(() => Promise.resolve(expected));
   test('verifica se o usuário é o tunico', async () => {
     return api.fetchURL().then((user) => {
       expect(user.gender).toEqual('male');
