@@ -23,7 +23,7 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
 describe('verifica o usuário', () => {
-  api.fetchURL = jest.fn().mockResolvedValue({
+  api.fetchURL = jest.fn().mockImplementationOnce(() => Promise.resolve({
     gender: 'male',
     name: { title: 'Ms', first: 'Antônio', last: 'Britto' },
     location: {
@@ -34,7 +34,7 @@ describe('verifica o usuário', () => {
       username: 'tunicao123',
       password: '1234567890',
       },
-    });
+    }));
 
   test('verifica se o usuário é o tunico', async () => {
     return api.fetchURL().then((user) => {

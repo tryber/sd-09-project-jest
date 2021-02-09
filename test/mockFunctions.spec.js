@@ -22,7 +22,7 @@ describe('verifica as funções e os mocks', () => {
   mockFunctions.divide.mockImplementation((a, b) => a / b);
   mockFunctions.power.mockImplementation((a, b) => a ** b);
   mockFunctions.factorial.mockImplementation(n => {
-    // the implemented code is borrowed from:
+    // the implemented code below is borrowed from:
     // https://www.educative.io/edpresso/how-to-find-the-factorial-of-a-number-in-javascript
     let answer = 1;
     if (n == 0 || n == 1){
