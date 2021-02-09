@@ -21,6 +21,7 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 
 describe('quem sobreviveu?', () => {
   beforeEach(() => adventure.randomAttack());
+  afterEach(() => adventure.specialists.map(({ nome }) => console.log(`${nome} survived`)));
 
   test('depois da primeira aventura', () => {
     expect(adventure.specialists.length).toBe(5);
