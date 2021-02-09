@@ -7,7 +7,7 @@ Após cada aventura um de nossos aventureiros cairá.
 Cada um dos testes abaixo verifica a quantidade de aventureiros após cada iteração.
 Sua missão aqui é:
 
-  - Use a função randomAttack do objeto adventure
+  -Use a função randomAttack do objeto adventure
   que remove um dos aventureiros toda vez que é chamada,
   ela deve funcionar entre cada teste.
   Opcional:
@@ -20,8 +20,8 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
 describe('quem sobreviveu?', () => {
-  // Adicione seu código aqui
-
+ beforeEach(adventure.randomAttack);
+  
   test('depois da primeira aventura', () => {
     expect(adventure.specialists.length).toBe(5);
   });
