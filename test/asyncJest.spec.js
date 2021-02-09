@@ -13,7 +13,7 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 describe("o retorno do telefonema", () => {
   test("atende", async () => {
     //assert.fail();
-    // Insira seu teste assíncrono aqui
+    // Insira seu teste assíncrono aqui  a
     expect.assertions(1);
     return answerPhone("atende").then((atende) => { expect(atende).toBe('Oi!')})
   })
