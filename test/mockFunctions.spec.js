@@ -69,7 +69,7 @@ describe('verifica as funções e os mocks', () => {
   test('testa função factorial', () => {
     factorial.mockImplementation((a) => {
       if (a > 1) {
-        return a * factorial(a - 1);
+        return (a * factorial(a - 1));
       }
       return a;
     });
