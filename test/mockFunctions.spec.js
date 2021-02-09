@@ -16,15 +16,31 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
 describe('verifica as funções e os mocks', () => {
+  // const addFunction = jest.fn(mockFunctions.add)
+  mockFunctions.add.mockImplementation((a , b) => (a + b));
+  mockFunctions.subtract.mockImplementation((a , b) => (a - b));
+  mockFunctions.multiply.mockImplementation((a , b) => (a * b));
+  mockFunctions.divide.mockImplementation((a , b) => (a / b));
+  mockFunctions.power.mockImplementation((a , b) =>  (a ** b));
+  mockFunctions.factorial.mockImplementation((a) => {
+    let fact = 1;
+    if(a === 0) {
+      return fact;
+    } else {
+      for (let i = a; i >= 1; i--) {
+        fact *= i;
+      }
+      return fact;
+    }
+  });
+  
   // Crie suas mock functions aqui
   
   test('testa função add', () => {
-    // const addFunction = jest.fn(mockFunctions.add)
-    // test1.mockImplementation(word => word.toLowerCase())
 
     expect(mockFunctions.add(1, 2)).toEqual(3);
     expect(mockFunctions.add(8, 37)).toEqual(45);
-    expect(mockFunctions.add(-11, 25)).toEqual(-14);
+    expect(mockFunctions.add(-11, 25)).toEqual(14);
     expect(mockFunctions.add(13, -188)).toEqual(-175);
     expect(mockFunctions.add(7, 26)).toEqual(33);
   });
