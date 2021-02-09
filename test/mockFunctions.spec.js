@@ -16,6 +16,14 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 
 describe('verifica as funções e os mocks', () => {
   // Crie suas mock functions aqui
+  mockFunctions.add = jest
+    .fn()
+    .mockReturnValueOnce(3)
+    .mockReturnValueOnce(45)
+    .mockReturnValueOnce(14)
+    .mockReturnValueOnce(-175)
+    .mockReturnValueOnce(33);
+  
   
   test('testa função add', () => {
     expect(mockFunctions.add(1, 2)).toEqual(3);
