@@ -24,7 +24,6 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 
 describe('verifica o usuário', () => {
   const apiUrl = jest.spyOn(api, "fetchURL");
-  afterEach(apiUrl.mockReset);
 
   const object = {
     gender: 'male',
