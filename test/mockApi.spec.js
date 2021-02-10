@@ -26,7 +26,7 @@ const response = {
   gender: 'male',
   name: { title: 'Mr', first: 'Antônio', last: 'Britto' },
   location: {
-    country: 'Brasil',
+    country: 'Brazil',
   },
   email: 'tunico@bol.com.br',
   login: {
