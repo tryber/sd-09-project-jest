@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Jest project",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
