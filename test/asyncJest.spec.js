@@ -12,9 +12,11 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 
 describe("o retorno do telefonema", () => {
   test("atende", async () => {
-    await expect(answerPhone(answer)).resolve();
+    const newPromise = await answerPhone(true).then((resolve) => resolve);
+    expect(newPromise).toBe('Oi!');
   });
   test("ocupado", async () => {
-    await expect(answerPhone(!answer)).reject();
+    const newPromisseFail = await answerPhone(false).catch((reject) => reject);
+    expect(newPromisseFail).toBe('Infelizmente não podemos atender...');
   });
 });
