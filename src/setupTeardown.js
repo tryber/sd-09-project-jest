@@ -18,6 +18,7 @@ const randomAttack = () => {
   console.log(`${randomSpecialist.nome}, the ${randomSpecialist.classe} has been ${randomMonster.ataque} by a ${randomMonster.nome}`);
   console.log(`Rest in peace, ${randomSpecialist.nome}...`);
   specialists.splice(randomSpecialistIndex, 1);
+  console.log(specialists);
 };
 
 module.exports = { specialists, randomAttack };
