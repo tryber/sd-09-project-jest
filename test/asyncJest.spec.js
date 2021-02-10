@@ -9,7 +9,7 @@ a função recebe como parâmetro true e false, respectivamente.
 
 ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
-
+/*
 describe("o retorno do telefonema", () => {
   test("atende", () => {
     answerPhone()
@@ -20,3 +20,4 @@ describe("o retorno do telefonema", () => {
       .catch(response => expect(response).toBe('Infelizmente não podemos atender...'))
   });
 });
+*/
