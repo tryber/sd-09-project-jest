@@ -27,7 +27,7 @@ describe('verifica as funções e os mocks', () => {
     if(a === 0) {
       return fact;
     } else {
-      for (let i = a; i >= 1; i--) {
+      for (let i = a; i >= 1; i -=1) {
         fact *= i;
       }
       return fact;
