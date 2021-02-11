@@ -24,13 +24,13 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 
 
 const responseApi = {
-  gender: 'female',
-  name: { title: 'Ms', first: 'Deborah', last: 'Hanson' },
+  gender: 'male',
+  name: { title: 'Ms', first: 'Antônio', last: 'Britto' },
   location: {
     street: { number: 1299, name: 'Rochestown Road' },
     city: 'Birr',
     state: 'Wicklow',
-    country: 'Ireland',
+    country: 'Brazil',
     postcode: 16223,
     coordinates: { latitude: '26.2451', longitude: '45.2995' },
     timezone: {
@@ -38,11 +38,11 @@ const responseApi = {
       description: 'Bombay, Calcutta, Madras, New Delhi'
     }
   },
-  email: 'deborah.hanson@example.com',
+  email: 'tunico@bol.com.br',
   login: {
     uuid: '45db2b1f-1c9a-4a80-9572-e46614f86c30',
-    username: 'bluewolf366',
-    password: 'iverson3',
+    username: 'tunicao123',
+    password: '1234567890',
     salt: 'XKOOGc2x',
     md5: '8cb7b4686f3869247b3ed189de780ea6',
     sha1: 'c24641f415cf36f4494ea4007fb3d77b47a6aad5',
@@ -62,7 +62,7 @@ const responseApi = {
 }
 
 describe('verifica o usuário', () => {
-  // Crie sua mock da função fetchURL() aqui
+  api.fetchURL = jest.fn(api.fetchURL).mockResolvedValue(responseApi);
 
   test('verifica se o usuário é o tunico', async () => {
     return api.fetchURL().then((user) => {
