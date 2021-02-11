@@ -11,18 +11,32 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
 describe("o retorno do telefonema", () => {
-  test("atende", done => {
-    answerPhone(true).then((resolve) => {
-      expect(resolve).toEqual('Oi!')
-      done();
-    });
+  test("atende", async () => {
+    expect.assertions(1);
+    const result = await answerPhone(true);
+    expect(result).toBe('Oi!');
   });
+
+  // test("atende", () => {
+  //   expect.assertions(1);
+  //   return answerPhone(true).then((data) => {
+  //     expect(data).toBe('Oi!');
+  //   });
+  // });
   
-  test("ocupado", done => {
-    // assert.fail();
-    answerPhone(false).catch((reject) => {
-      expect(reject).toEqual('Infelizmente não podemos atender...')
-      done();
-    });
+  test("ocupado", async () => {
+    expect.assertions(1);
+    try {
+      await answerPhone(false);
+    } catch (error) {
+      expect(error).toBe('Infelizmente não podemos atender...');
+    }
   });
+
+  // test("ocupado", () => {
+  //   expect.assertions(1);
+  //   return answerPhone(false).catch((data) => {
+  //     expect(data).toBe('Infelizmente não podemos atender...');
+  //   });
+  // });
 });
