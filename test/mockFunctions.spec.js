@@ -13,18 +13,14 @@ O foco aqui é a utilização de mock functions.
 
 ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
-const { add } = require('../src/mockFunctions');
+const { add, subtract, divide, multiply, power, factorial } = require('../src/mockFunctions');
 jest.mock('../src/mockFunctions');
 
 describe('verifica as funções e os mocks', () => {
   // Crie suas mock functions aqui
   test('testa função add', () => {
 
-    /* math.somar.mockImplementation((a, b) => a + b);
-  math.somar(1, 2); */
-
     add.mockImplementation((a, b) => a + b);
-    add(1, 2);
 
     expect(mockFunctions.add(1, 2)).toEqual(3);
     expect(mockFunctions.add(8, 37)).toEqual(45);
@@ -32,7 +28,10 @@ describe('verifica as funções e os mocks', () => {
     expect(mockFunctions.add(13, -188)).toEqual(-175);
     expect(mockFunctions.add(7, 26)).toEqual(33);
   });
+
   test('testa função subtract', () => {
+    subtract.mockImplementation((a, b) => a - b);
+
     expect(mockFunctions.subtract(899, 35)).toEqual(864);
     expect(mockFunctions.subtract(-17, 333)).toEqual(-350);
     expect(mockFunctions.subtract(45, 97)).toEqual(-52);
