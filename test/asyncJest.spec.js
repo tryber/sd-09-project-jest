@@ -7,6 +7,8 @@ Dependendo do parâmetro o retorno da função varia, veja a função no arquivo
 Complete o código abaixo para testar as situações em que
 a função recebe como parâmetro true e false, respectivamente.
 
+Vamo que vamo!
+
 ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
