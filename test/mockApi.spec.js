@@ -39,7 +39,6 @@ describe('verifica o usuário', () => {
     },
   })
 
-
   test('verifica se o usuário é o tunico', async () => {
     return api.fetchURL().then((user) => {
       expect(user.gender).toEqual('male');
