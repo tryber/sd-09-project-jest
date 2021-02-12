@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/betrybe/sd-0x-project-jest#readme",
   "devDependencies": {
-    "jest": "^24.9.0",
     "acorn": ">=5.7.4",
+    "jest": "^24.9.0",
     "minimist": ">=1.2.2"
   }
 }
