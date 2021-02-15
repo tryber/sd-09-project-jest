@@ -23,7 +23,7 @@ describe("o retorno do telefonema", () => {
   test("ocupado", () => {
     // assert.fail();
     // Insira seu teste assíncrono aqui
-    return answerPhone(false).then(response => {
+    return answerPhone(false).catch(error => {
       expect(error).toBe('Infelizmente não podemos atender...');
     });
   });
