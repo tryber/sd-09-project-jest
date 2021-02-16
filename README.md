@@ -1,4 +1,4 @@
-## Termos de acordos
+<!-- ## Termos de acordos
 
 Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe!
 
@@ -145,9 +145,21 @@ codeclimate analyze
 
 # Requisitos do projeto
 
-## Lista de requisitos
+## Lista de requisitos -->
 
-### 1. Crie testes para uma função assíncrona
+## Projeto do Bloco 10 | Testes automatizados com Jest :clipboard:
+
+> Projeto sobre as lições aprendidas até o _bloco 10_. **Trybe - Turma 9** :memo:
+
+## Project Jest :clipboard:
+### Lista de requisitos :page_with_curl:
+
+- [ ] 1. Crie testes para uma **_função assíncrona_**
+- [ ] 2. Crie um **Mock** no arquivo `test/mockFunctions.spec.js`
+- [ ] 3. Crie um **Mock** para o retorno da **API**
+- [ ] 4. Crie funções no arquivo `test/setupTeardown.spec.js`
+
+<!-- ### 1. Crie testes para uma função assíncrona
 
 Complete os testes do arquivo `test/asyncJest.spec.js` para que funcionem com código assíncrono.
 
@@ -208,8 +220,8 @@ Exemplo de resposta da API randomuser.me:
 Intercale funções entre os testes definidos no arquivo `test/setupTeardown.spec.js`.
 
 ---
-
-# Avisos Finais
+ -->
+<!-- # Avisos Finais
 
 Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
 
@@ -218,3 +230,4 @@ Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/Z
 O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
 
 ---
+ -->
