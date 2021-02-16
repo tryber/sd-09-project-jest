@@ -33,7 +33,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
     - [4 - Crie funções no arquivo test/setupTeardown.spec.js](#4-Crie-funções-no-arquivo-test/setupTeardown.spec.js)
 - [Avisos finais](#avisos-finais)
 
-----
+---
 
 # Habilidades
 
