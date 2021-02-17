@@ -24,45 +24,43 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 
 describe('verifica o usuário', () => {
   // Crie sua mock da função fetchURL() aqui
-  const returnApi = [
-    {
-      gender: 'male',
-      name: { title: 'Mr', first: 'Antônio', last: 'Brito' },
-      location: {
-        street: { number: 0, name: '' },
-        city: '',
-        state: '',
-        country: 'Brazil',
-        postcode: 0,
-        coordinates: { latitude: '', longitude: '' },
-        timezone: {
-          offset: '',
-          description: ''
-        }
-      },
-      email: 'tunico@bol.com.br',
-      login: {
-        uuid: '',
-        username: 'tunicao123',
-        password: '1234567890',
-        salt: '',
-        md5: '',
-        sha1: '',
-        sha256: ''
-      },
-      dob: { date: '', age: 0 },
-      registered: { date: '', age: 0 },
-      phone: '',
-      cell: '',
-      id: { name: '', value: '' },
-      picture: {
-        large: '',
-        medium: '',
-        thumbnail: ''
-      },
-      nat: 'IE'
-    }
-  ];
+  const returnApi = { 
+    gender: 'male',
+    name: { title: 'Mr', first: 'Antônio', last: 'Britto' },
+    location: {
+      street: { number: 0, name: '' },
+      city: '',
+      state: '',
+      country: 'Brazil',
+      postcode: 0,
+      coordinates: { latitude: '', longitude: '' },
+      timezone: {
+        offset: '',
+        description: ''
+      }
+    },
+    email: 'tunico@bol.com.br',
+    login: {
+      uuid: '',
+      username: 'tunicao123',
+      password: '1234567890',
+      salt: '',
+      md5: '',
+      sha1: '',
+      sha256: ''
+    },
+    dob: { date: '', age: 0 },
+    registered: { date: '', age: 0 },
+    phone: '',
+    cell: '',
+    id: { name: '', value: '' },
+    picture: {
+      large: '',
+      medium: '',
+      thumbnail: ''
+    },
+    nat: 'IE'
+  };
   
   test("testando requisição caso a promise resolva", async () => {
     api.fetchURL = jest.fn().mockResolvedValue(returnApi);
