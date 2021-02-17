@@ -1,4 +1,5 @@
 const mockFunctions = require('../src/mockFunctions');
+jest.mock('../src/mockFunctions');
 
 /*
 Criamos uma série de funções com eficiência duvidosa.
@@ -16,7 +17,6 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 
 describe('verifica as funções e os mocks', () => {
   // Crie suas mock functions aqui
-  jest.mock('../src/mockFunctions');
   function factorialize(num) {
     if (num === 0 || num === 1)
       return 1;
