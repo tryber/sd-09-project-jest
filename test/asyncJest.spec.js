@@ -14,7 +14,6 @@ describe("o retorno do telefonema", () => {
   test("atende", () => {
     assert.fail();
     // Insira seu teste assíncrono aqui
-    1
   });
   test("ocupado", () => {
     assert.fail();
