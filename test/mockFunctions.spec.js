@@ -17,17 +17,8 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 
 describe('verifica as funções e os mocks', () => {
   // Crie suas mock functions aqui
-  function factorialize(num) {
-    if (num === 0 || num === 1)
-      return 1;
-    for (var i = num - 1; i >= 1; i--) {
-      num *= i;
-    }
-    return num;
-  }
-  mockFunctions.add.mockImplementation((a, b) => a + b);
-  
   test('testa função add', () => {
+    mockFunctions.add.mockImplementation((a, b) => a + b);
 
     expect(mockFunctions.add(1, 2)).toEqual(3);
     expect(mockFunctions.add(8, 37)).toEqual(45);
@@ -72,6 +63,14 @@ describe('verifica as funções e os mocks', () => {
     expect(mockFunctions.power(0, 0)).toEqual(1);
   });
   test('testa função factorial', () => {
+    function factorialize(num) {
+      if (num === 0 || num === 1)
+        return 1;
+      for (var i = num - 1; i >= 1; i--) {
+        num *= i;
+      }
+      return num;
+    }
     mockFunctions.add.mockImplementation(a => factorialize(a));
 
     expect(mockFunctions.factorial(5)).toEqual(120);
