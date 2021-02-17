@@ -71,7 +71,7 @@ describe('verifica as funções e os mocks', () => {
       }
       return num;
     }
-    mockFunctions.add.mockImplementation(a => factorialize(a));
+    mockFunctions.factorial.mockImplementation(a => factorialize(a));
 
     expect(mockFunctions.factorial(5)).toEqual(120);
     expect(mockFunctions.factorial(10)).toEqual(3628800);
