@@ -1,3 +1,4 @@
+const { after } = require('lodash');
 const adventure = require('../src/setupTeardown');
 /*
 Num universo não tão distante, um grupo de aventureiros da Trybe enfrentam uma série de testes.
@@ -21,7 +22,9 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 
 describe('quem sobreviveu?', () => {
   // Adicione seu código aqui
-
+  // font: https://jestjs.io/docs/pt-BR/setup-teardown
+  beforeEach(() => adventure.randomAttack());
+  
   test('depois da primeira aventura', () => {
     expect(adventure.specialists.length).toBe(5);
   });
