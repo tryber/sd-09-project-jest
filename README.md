@@ -147,6 +147,18 @@ codeclimate analyze
 
 ## Lista de requisitos
 
+<!-- ## Projeto do Bloco 10 | Testes automatizados com Jest :clipboard:
+
+> Projeto sobre as lições aprendidas até o _bloco 10_. **Trybe - Turma 9** :memo:
+
+## Project Jest :clipboard:
+### Lista de requisitos :page_with_curl:
+
+- [ ] 1. Crie testes para uma **_função assíncrona_**
+- [ ] 2. Crie um **Mock** no arquivo `test/mockFunctions.spec.js`
+- [ ] 3. Crie um **Mock** para o retorno da **API**
+- [ ] 4. Crie funções no arquivo `test/setupTeardown.spec.js` -->
+
 ### 1. Crie testes para uma função assíncrona
 
 Complete os testes do arquivo `test/asyncJest.spec.js` para que funcionem com código assíncrono.
