@@ -27,7 +27,7 @@ describe('quem sobreviveu?', () => {
   });
 
   afterAll(() => {
-    console.log(`O sobrevivente é ${adventure.specialists[0].name}, o ${adventure.specialists[0].classe}`);
+    console.log(`O sobrevivente é ${adventure.specialists[0].nome}, o ${adventure.specialists[0].classe}`);
   });
 
   test('depois da primeira aventura', () => {
