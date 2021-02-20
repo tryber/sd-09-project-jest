@@ -27,11 +27,11 @@ describe('verifica as funções e os mocks', () => {
     for (let i = 1; i < b; i += 1) answer *= a;
     return answer;
   });
-  mockFunctions.factorial.mockImplementation((a, b) => {
+  mockFunctions.factorial.mockImplementation((a) => {
     let answer = 1;
-    for (let i = 2; i <= b; i += 1) answer *= i;
+    for (let i = 2; i <= a; i += 1) answer *= i;
     return answer;
-  })
+  });
   
   test('testa função add', () => {
     expect(mockFunctions.add(1, 2)).toEqual(3);
