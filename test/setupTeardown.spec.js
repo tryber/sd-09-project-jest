@@ -21,24 +21,20 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 
 describe('quem sobreviveu?', () => {
   const newRdmAttack = jest.spyOn(adventure, 'randomAttack');
+  beforeEach(() => newRdmAttack());
   test('depois da primeira aventura', () => {
-    newRdmAttack();
     expect(adventure.specialists.length).toBe(5);
   });
   test('depois da segunda aventura', () => {
-    newRdmAttack();
     expect(adventure.specialists.length).toBe(4);
   });
   test('depois da terceira aventura', () => {
-    newRdmAttack();
     expect(adventure.specialists.length).toBe(3);
   });
   test('depois da quarta aventura', () => {
-    newRdmAttack();
     expect(adventure.specialists.length).toBe(2);
   });
   test('depois da quinta aventura', () => {
-    newRdmAttack();
     expect(adventure.specialists.length).toBe(1);
   });
 });
