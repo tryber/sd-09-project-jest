@@ -11,12 +11,6 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
 describe("o retorno do telefonema", () => {
-  test("atende", () => {
-    assert.fail();
-    // Insira seu teste assíncrono aqui
-  });
-  test("ocupado", () => {
-    assert.fail();
-    // Insira seu teste assíncrono aqui
-  });
+  test("atende", () => expect(answerPhone(true)).resolves.toBe('Oi!'));
+  test("ocupado", () => expect(answerPhone(false).rejects.toBe('Infelizmente não podemos antender...'));
 });
