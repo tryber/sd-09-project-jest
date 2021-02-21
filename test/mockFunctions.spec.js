@@ -1,3 +1,4 @@
+jest.mock('../src/mockFunctions.js');
 const mockFunctions = require('../src/mockFunctions');
 /*
 Criamos uma série de funções com eficiência duvidosa.
