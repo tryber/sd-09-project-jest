@@ -1,4 +1,4 @@
-//const mockFunctions = require('../src/mockFunctions');
+const mockFunctions = require('../src/mockFunctions.js');
 
 jest.mock('../src/mockFunctions.js');
 /*
