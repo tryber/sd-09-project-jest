@@ -12,10 +12,10 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 
 describe("o retorno do telefonema", () => {
   const copyFunction = answerPhone;
-  test("atende", () => {
+  test("atende", async () => {
     expect(copyFunction(true)).resolves.toBe('Oi!');
   });
-  test("ocupado", () => {
+  test("ocupado", async () => {
     expect(copyFunction(false)).rejects.toBe('Infelizmente não podemos atender...');
   });
 });
