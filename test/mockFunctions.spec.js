@@ -63,6 +63,11 @@ describe('verifica as funções e os mocks', () => {
   test('testa função factorial', () => {
     const newFactorial = jest.spyOn(mockFunctions, 'factorial');
     newFactorial.mockImplementation((a) => {
+      let fact = 1;
+      for (let i = 1; i <= a; i += 1) {
+      fact *= i;
+      }
+      return fact;
     });
     expect(mockFunctions.factorial(5)).toEqual(120);
     expect(mockFunctions.factorial(10)).toEqual(3628800);
