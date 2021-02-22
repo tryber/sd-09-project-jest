@@ -18,10 +18,11 @@ describe('verifica as funções e os mocks', () => {
   mockFunctions.add = jest.fn((a, b) => a + b);
   mockFunctions.subtract = jest.fn((a, b) => a - b);
   mockFunctions.divide = jest.fn((a, b) => a / b);
+  mockFunctions.multiply = jest.fn((a, b) => a * b);
   mockFunctions.power = jest.fn((a, b) => {
-    let pow = a;
+    let pow = 1;
     for (let i = 0; i < b; i += 1) {
-      pow = multiply(pow, a);
+      pow *= a;
     }
     return pow;
   });
