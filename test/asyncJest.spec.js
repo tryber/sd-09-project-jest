@@ -12,10 +12,10 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 describe("o retorno do telefonema", () => {
   test("atende", async () => {
     assert.fail('Infelizmente não podemos atender...');
-    await expect(answerPhone(true).toEqual('Oi!'))
+    await expect((answerPhone(true)).resolves.toEqual('Oi!'))
   });
   test("ocupado", async () => {
     assert.fail('Oi!');
-    await expect(answerPhone(false).toEqual('Infelizmente não podemos atender...'))
+    await expect((answerPhone(false)).rejects.toEqual('Infelizmente não podemos atender...'))
   });
 });
