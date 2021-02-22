@@ -27,7 +27,7 @@ describe('verifica as funções e os mocks', () => {
     return pow;
   });
   mockFunctions.factorial = jest.fn((a) => {
-    let fact = 0;
+    let fact = 1;
     for (let i = 0; i < a; i += 1) {
       fact *= a;
     }
