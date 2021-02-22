@@ -23,7 +23,15 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
 describe('verifica o usuário', () => {
-  // Crie sua mock da função fetchURL() aqui
+  api.fetchURL = jest
+  .fn()
+  .mockReturnValueOnce('male')
+  .mockReturnValueOnce('Antônio')
+  .mockReturnValueOnce('Britto')
+  .mockReturnValueOnce('Brazil')
+  .mockReturnValueOnce('tunico@bol.com.br')
+  .mockReturnValueOnce('tunicao123')
+  .mockReturnValueOnce('1234567890');
 
   test('verifica se o usuário é o tunico', async () => {
     return api.fetchURL().then((user) => {
