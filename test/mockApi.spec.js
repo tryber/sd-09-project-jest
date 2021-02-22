@@ -23,8 +23,7 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
 describe('verifica o usuário', () => {
-  const spyUser = jest.spyOn(api, 'fetchURL');
-  spyUser.mockResolvedValue({
+  const spyUser = jest.spyOn(api, 'fetchURL').mockResolvedValue({
     gender: 'male',
     name: { first: 'Antônio', last: 'Britto' },
     location: { country: 'Brazil' },
