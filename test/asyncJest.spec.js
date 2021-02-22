@@ -12,11 +12,13 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 
 describe('o retorno do telefonema', () => {
   test('atende', async () => {
-    await expect(answerPhone(true)).resolves.toEqual('Oi');
+    return answerPhone('hi').then((answer) => {
+      expect(answer).toEqual('Oi!');
+    });
   });
   test('ocupado', async () => {
-    await expect(answerPhone(false)).rejects.toEqual(
-      'Infelizmente não podemos atender...',
-    );
+    return answerPhone('').catch((error) => {
+      expect(error).toEqual('Infelizmente não podemos atender...');
+    });
   });
 });
