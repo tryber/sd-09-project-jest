@@ -10,12 +10,12 @@ a função recebe como parâmetro true e false, respectivamente.
 ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 describe("o retorno do telefonema", () => {
-  test("atende", () => {
-    assert.fail();
-    expect(answerPhone(answer).toEqual('Oi!'))
+  test("atende", async () => {
+    assert.fail('Infelizmente não podemos atender...');
+    await expect(answerPhone(true).toEqual('Oi!'))
   });
-  test("ocupado", () => {
-    assert.fail();
-    expect(answerPhone(reject).toEqual('Infelizmente não podemos atender...'))
+  test("ocupado", async () => {
+    assert.fail('Oi!');
+    await expect(answerPhone(false).toEqual('Infelizmente não podemos atender...'))
   });
 });
