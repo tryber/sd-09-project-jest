@@ -13,12 +13,22 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 // Primeiro commit
 
 describe("o retorno do telefonema", () => {
-  test("atende", () => {
-    assert.fail();
+  test("atende", async () => {
+    // assert.fail();
     // Insira seu teste assíncrono aqui
+    expect.assertions(1);
+    // return await answerPhone(true).then(() => {
+    //   expect.stringContaining('Oi!');
+    // });
+    return expect(answerPhone(true)).resolves.toEqual('Oi!');
   });
-  test("ocupado", () => {
-    assert.fail();
+  test("ocupado", async () => {
+    // assert.fail();
     // Insira seu teste assíncrono aqui
+    expect.assertions(1);
+    // return await answerPhone(false).catch(error =>
+    //   expect(error).stringContaining('Infelizmente não podemos atender...')
+    // );
+    return expect(answerPhone(false)).rejects.toEqual('Infelizmente não podemos atender...');
   });
 });
