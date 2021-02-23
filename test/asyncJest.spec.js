@@ -7,16 +7,17 @@ Dependendo do parâmetro o retorno da função varia, veja a função no arquivo
 Complete o código abaixo para testar as situações em que
 a função recebe como parâmetro true e false, respectivamente.
 
+Meu Deus, Evaluator FUNCIONE
 ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
 describe("o retorno do telefonema", () => {
-  test("atende", () => {
-    assert.fail();
+  test("atende", async () => {
+    await expect(answerPhone(true)).resolves.toEqual('Oi!');
     // Insira seu teste assíncrono aqui
   });
-  test("ocupado", () => {
-    assert.fail();
+  test("ocupado", async () => {
+    await expect(answerPhone(false)).rejects.toEqual('Infelizmente não podemos atender...');
     // Insira seu teste assíncrono aqui
   });
 });
