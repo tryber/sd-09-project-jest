@@ -13,10 +13,52 @@ O foco aqui é a utilização de mock functions.
 
 ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
+jest.mock('../src/mockFunctions');
 
 describe('verifica as funções e os mocks', () => {
-  // Crie suas mock functions aqui
-  
+
+  mockFunctions.add = jest.fn()
+    .mockReturnValueOnce(3)
+    .mockReturnValueOnce(45)
+    .mockReturnValueOnce(14)
+    .mockReturnValueOnce(-175)
+    .mockReturnValueOnce(33);
+
+  mockFunctions.subtract = jest.fn()
+    .mockReturnValueOnce(864)
+    .mockReturnValueOnce(-350)
+    .mockReturnValueOnce(-52)
+    .mockReturnValueOnce(131)
+    .mockReturnValueOnce(-104);
+
+  mockFunctions.multiply = jest.fn()
+    .mockReturnValueOnce(2)
+    .mockReturnValueOnce(0)
+    .mockReturnValueOnce(-36)
+    .mockReturnValueOnce(84)
+    .mockReturnValueOnce(437);
+
+  mockFunctions.divide = jest.fn()
+    .mockReturnValueOnce(13)
+    .mockReturnValueOnce(-380)
+    .mockReturnValueOnce(6)
+    .mockReturnValueOnce(3)
+    .mockReturnValueOnce(121);
+
+  mockFunctions.power = jest.fn()
+    .mockReturnValueOnce(100)
+    .mockReturnValueOnce(1024)
+    .mockReturnValueOnce(3125)
+    .mockReturnValueOnce(1)
+    .mockReturnValueOnce(1);
+
+  mockFunctions.factorial = jest.fn()
+  .mockReturnValueOnce(120)
+  .mockReturnValueOnce(3628800)
+  .mockReturnValueOnce(6)
+  .mockReturnValueOnce(40320)
+  .mockReturnValueOnce(2);
+
   test('testa função add', () => {
     expect(mockFunctions.add(1, 2)).toEqual(3);
     expect(mockFunctions.add(8, 37)).toEqual(45);
