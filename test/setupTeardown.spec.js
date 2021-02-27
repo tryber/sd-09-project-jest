@@ -30,6 +30,10 @@ beforeAdventure(() => {
   adventure.randomAttack();
 })
 
+afterAdventure(() => {
+  //to define afterAdventure
+});
+
   test('depois da primeira aventura', () => {
     expect(adventure.specialists.length).toBe(5);
   });
