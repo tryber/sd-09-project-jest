@@ -9,14 +9,12 @@ a função recebe como parâmetro true e false, respectivamente.
 
 ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
-
+// Referencia https://jestjs.io/docs/pt-BR/23.x/asynchronous#resolves--rejects
 describe("o retorno do telefonema", () => {
-  test("atende", () => {
-    assert.fail();
-    // Insira seu teste assíncrono aqui
+  test("atende", async () => {
+    await expect(answerPhone(true)).resolves.toEqual('Oi!')
   });
-  test("ocupado", () => {
-    assert.fail();
-    // Insira seu teste assíncrono aqui
+  test("ocupado", async () => {
+    await expect(answerPhone(false)).rejects.toEqual('Infelizmente não podemos atender...')
   });
 });

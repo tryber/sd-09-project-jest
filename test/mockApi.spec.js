@@ -23,7 +23,17 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
 describe('verifica o usuário', () => {
-  // Crie sua mock da função fetchURL() aqui
+  //Criando os dados da api que recebe um objeto com key e value
+  const requestApi = {
+    gender: 'male',
+    name: { first: 'Antônio', last: 'Britto' },
+    location: { country: 'Brazil' },
+    email: 'tunico@bol.com.br',
+    login: { username: 'tunicao123', password: '1234567890'},
+  }
+  /*Adicionando o caminho da Api, mockResovedValue retorna uma promisse, foi
+  o que entendi na documentação (https://jestjs.io/docs/mock-function-api#mockfnmockresolvedvaluevalue).*/
+  api.fetchURL = jest.fn().mockResolvedValue(requestApi)
 
   test('verifica se o usuário é o tunico', async () => {
     return api.fetchURL().then((user) => {

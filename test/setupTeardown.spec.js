@@ -20,7 +20,12 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
 describe('quem sobreviveu?', () => {
-  // Adicione seu código aqui
+  /*Conforme documentação encontrada em https://deltice.github.io/jest/docs/pt-BR/api.html#:~:text=Aqui%20beforeEach%20garante%20que%20o,execute%2C%20use%20ao%20inv%C3%A9s%20beforeAll%20.
+  o beforeEach vai executar a função antes de cada teste, tambem assisti a aula ao vivo 10.2
+  turma 8 */
+  beforeEach(() => {
+    adventure.randomAttack()
+  })
 
   test('depois da primeira aventura', () => {
     expect(adventure.specialists.length).toBe(5);
