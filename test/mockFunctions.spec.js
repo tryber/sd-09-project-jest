@@ -13,7 +13,11 @@ O foco aqui é a utilização de mock functions.
 
 ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
-//Após rever todo o conteudo e estudar documentação cheguei ao resultado.
+/*Após rever todo o conteudo, assistir aula 10.3 turma 8 e 
+estudar documentação cheguei ao resultado
+Jest.fn() - Reatribui para outra funçãp
+mockImplementation - retorna uma função que recebe 2 parametros e retorna o resultado
+do calculo solicitado */
 describe('verifica as funções e os mocks', () => {
   mockFunctions.add = jest.fn().mockImplementation((a,b)=> a + b);
   mockFunctions.subtract = jest.fn().mockImplementation((a, b) => a - b);
