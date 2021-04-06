@@ -21,20 +21,24 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 
 describe('quem sobreviveu?', () => {
   // Adicione seu código aqui
+  beforeEach(() => {
+    adventure.randomAttack();
+  });
 
-  test.skip('depois da primeira aventura', () => {
+  test('depois da primeira aventura', () => {
     expect(adventure.specialists.length).toBe(5);
   });
-  test.skip('depois da segunda aventura', () => {
+
+  test('depois da segunda aventura', () => {
     expect(adventure.specialists.length).toBe(4);
   });
-  test.skip('depois da terceira aventura', () => {
+  test('depois da terceira aventura', () => {
     expect(adventure.specialists.length).toBe(3);
   });
-  test.skip('depois da quarta aventura', () => {
+  test('depois da quarta aventura', () => {
     expect(adventure.specialists.length).toBe(2);
   });
-  test.skip('depois da quinta aventura', () => {
+  test('depois da quinta aventura', () => {
     expect(adventure.specialists.length).toBe(1);
   });
 });

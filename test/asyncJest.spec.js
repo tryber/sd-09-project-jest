@@ -11,10 +11,10 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 */
 
 describe("o retorno do telefonema", () => {
-  test.skip("atende", () => {
+  test("atende", () => {
     expect(answerPhone(true)).resolves.toBe('Oi!')
   });
-  test.skip("ocupado", () => {
+  test("ocupado", () => {
     expect(answerPhone()).rejects.toBe('Infelizmente não podemos atender...')
   });
 });
