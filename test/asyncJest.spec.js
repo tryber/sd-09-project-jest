@@ -17,6 +17,6 @@ describe("o retorno do telefonema", () => {
   });
   test("ocupado", () => {
     assert.fail();
-    // Insira seu teste assíncrono aqui
+    // Insira seu teste assíncrono aqui...
   });
 });
