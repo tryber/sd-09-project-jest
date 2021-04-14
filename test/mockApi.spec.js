@@ -59,7 +59,7 @@ describe('verifica o usuário', () => {
       thumbnail: 'https://randomuser.me/api/portraits/thumb/women/7.jpg'
     },
     nat: 'IE'
-  })
+  });
 
   test('verifica se o usuário é o tunico', async () => {
     return api.fetchURL().then((user) => {
